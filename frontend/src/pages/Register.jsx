@@ -13,8 +13,8 @@ const BASE_URL = import.meta.env.MODE === "development" ?"http://localhost:4004"
 const Register = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
-    const [username , setUsername] = useState("sunny");
-    const [password , setPassword] = useState("#Sunny123");
+    const [username , setUsername] = useState("");
+    const [password , setPassword] = useState("");
 
     const handleRegister = async () => {
         try {
