@@ -12,8 +12,8 @@ const BASE_URL = import.meta.env.MODE === "development" ?"http://localhost:4004"
 const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const [username, setUsername] = useState("aish");
-  const [password, setPassword] = useState("#Aish123");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleLogin = async () => {
     try {
